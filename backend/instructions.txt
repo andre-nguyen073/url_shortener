@@ -1,0 +1,12 @@
+Supabase Database 
+ID | Long URL | Shorten URL
+Requirements: 
+Shortened URL contains only (a-z) (A-Z) and (0-9)
+
+Create Unique ID for every single long URL
+Hash Functionality: 
+
+Convert base 62 conversion for that Unique ID 
+Append Hash Value into the long url 
+Store 
+
