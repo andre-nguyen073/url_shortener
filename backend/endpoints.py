@@ -8,11 +8,10 @@ app = FastAPI()
 short_urls = {}
 class UrlVal(BaseModel): 
     link: str
-#home page api 
-@app.get("/")
-def read_root():
-    return {"avaliable urls": "World"}
 
+@app.get("/")
+def login_page():
+    return {"avaliable urls": "World"}
 
 @app.post("/shorten_url")
 #fastapi will convert the payload into json -> json gets checked on BaseModel if it does not match 
