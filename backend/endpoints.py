@@ -13,6 +13,7 @@ origins = [
     "http://127.0.0.1:5173",
 ]
 
+#this allows the fastapi to talk to the frontend 
 app.add_middleware(
     CORSMiddleware,
     allow_origins=origins,
@@ -49,9 +50,13 @@ async def shorten_url(user_data: UrlVal, request: Request):
     base_url = str(request.base_url)
     return {"short_url": f"{base_url}{hash_val}"}  
 
+@app.post("/create_qrcode") 
+
+
 @app.get("/{short_hash}")
 async def redirect_to_origin(short_hash: str):
     if short_hash in short_urls:
         original_url = short_urls[short_hash]
         return RedirectResponse(url=original_url)
-    return {"error": "URL not found", "status": 404}
+    return {"error": "URL not found", "status": 404} 
+
