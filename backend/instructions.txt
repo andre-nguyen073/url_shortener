@@ -1,6 +1,0 @@
-Next Steps: 
-Set Up Supabase database for oauth 
-Use supabase to store username/passwords -> urls short urls clicks and any other data you want to retrieve
-Design frontend -> Gemini -> React Native
-Connect the frontend to the backend 
-Done!

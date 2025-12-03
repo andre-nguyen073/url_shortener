@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+pydantic
+python-dotenv
+supabase
+qrcode[pil]
+user-agents
+geoip2
+requests
+strawberry-graphql
